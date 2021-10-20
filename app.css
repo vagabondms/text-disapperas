@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body::after {
+  content: "";
+  background: url("./273C1B3A5387B4FE15.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.text-display {
+  width: 70%;
+  height: 400px;
+  font-size: 30px;
+  padding: 100px;
+}
+
+.text-display-wrapper,
+.text-input-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.text-input {
+  border: none;
+  background: none;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+.text {
+  font-family: "Impact", "fantasy";
+  -webkit-animation: disappear 4s 1s;
+  animation: disappear 4s forwards;
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 0.9;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 0.9;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
