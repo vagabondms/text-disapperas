@@ -19,3 +19,5 @@ textInput.addEventListener("keypress", (e) => {
     }, 4000);
   }
 });
+
+textInput.focus();
